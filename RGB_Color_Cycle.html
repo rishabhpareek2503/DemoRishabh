@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Cycling Heading</title>
+</head>
+<body>
+
+    <h1 id="colorCyclingHeading">Capstone Project using FSD</h1>
+
+    <script>
+        function cycleColors() {
+            var heading = document.getElementById('colorCyclingHeading');
+
+            setInterval(function () {
+                heading.style.color = 'red';
+            }, 5000);
+
+            setInterval(function () {
+                heading.style.color = 'green';
+            }, 10000);
+
+            setInterval(function () {
+                heading.style.color = 'blue';
+            }, 15000);
+        }
+
+        
+        window.onload = function () {
+            cycleColors();
+        };
+    </script>
+
+</body>
+</html>
